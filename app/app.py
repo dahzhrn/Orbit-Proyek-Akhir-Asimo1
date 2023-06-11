@@ -1,10 +1,3 @@
-'''
-	Contoh Deloyment untuk Domain Computer Vision (CV)
-	Orbit Future Academy - AI Mastery - KM Batch 4
-	Tim Deployment
-	2023
-'''
-
 # =[Modules dan Packages]========================
 
 from flask import Flask, render_template, request, jsonify
@@ -72,7 +65,7 @@ def apiDeteksi():
 			test_image         = Image.open('.' + gambar_prediksi)
 			
 			# Mengubah Ukuran Gambar
-			test_image_resized = test_image.resize((32, 32))
+			test_image_resized = test_image.resize((224, 224))
 			
 			# Konversi Gambar ke Array
 			image_array        = np.array(test_image_resized)
