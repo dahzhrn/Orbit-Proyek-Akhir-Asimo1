@@ -100,11 +100,11 @@ if __name__ == '__main__':
 	model.load_weights("model_pakaian_adat_indonesia.h5")
 
 	# Run Flask di lokal
-	app.run(host="localhost", port=5000, debug=True)
+	#app.run(host="localhost", port=5000, debug=True)
 
 	# Run Flask di goole colab
-	# run_with_ngrok(app)
-	# app.run()
+	run_with_ngrok(app)
+	app.run()
 	
 	
 	
