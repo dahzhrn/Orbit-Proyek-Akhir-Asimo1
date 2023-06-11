@@ -5,7 +5,7 @@ from tensorflow.keras.utils import array_to_img
 from tensorflow.keras.layers import Dense , Flatten , GlobalAveragePooling2D
 from tensorflow.keras.models import Sequential
 
-mobilenet = tf.keras.applications.mobilenet.MobileNet(input_shape=(32 , 32, 3),
+mobilenet = tf.keras.applications.mobilenet.MobileNet(input_shape=(224, 224, 3),
                                            include_top=False,
                                            weights='imagenet')
 
